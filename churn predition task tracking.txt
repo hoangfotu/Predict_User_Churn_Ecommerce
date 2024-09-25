@@ -1,0 +1,51 @@
+1. QUESTIONS:
+- Users who hasn't been active in the last X days are said to have churned (most likely to churn) => Find X??? => X=14
+	+ all users in current year who active at least 2 days
+	+ find the longest inactive period which are most likely to churn (which is X) done => X = 28 72%
+	+ avg days between 2 consecutive active dates (take 90th percentile ) => done X = 14 90%
+- Define problem
+	+ input: users based feature:
+			number of days since last active date => longer the time since last active day, more likely to churn
+			number of active days in last 4 weeks from active date => more active days, less likely to churn
+			engagement rate => more engagement, less likely to churn
+			seniority (time from first to last active date) => more senior, less likely to churn
+			
+	+ output: Proba that an user churn in the next X days, 1W
+		  proba in range(0,1)
+		  proba > 0.5 => predict as churn 
+	+ what to do after having the prediction?? => PN, email,...
+	+ when to make prediction: once a week, once a month?
+	
+2. Key goals
+- predict if user will leave in advance (customer churn) - ex: 1 week/ 2 weeks/1 month/3 months
+- find out main reasons for churning
+
+variables:
+first date, number of clicks in active day, how many active days in a week, 
+week day user/weekend user???, whether mobile users use mobile features,
+search, query search, dowload...
+
+number of event features user use
+if user use a specific feature or not
+
+3. Reference
+- https://towardsdatascience.com/predicting-customer-churn-using-logistic-regression-c6076f37eaca
+- https://medium.com/swlh/churn-prediction-using-pyspark-a1f4ef0439b3
+- https://medium.com/@treerana.ts/customer-churn-prediction-19907d885ed6
+- https://manningbooks.medium.com/forecasting-churn-risk-with-machine-learning-part-1-97333978891a
+- https://manningbooks.medium.com/forecasting-churn-risk-with-machine-learning-part-2-56659093c4ea
+better
+- https://towardsdatascience.com/churn-prediction-with-machine-learning-ca955d52bd8c
+- https://towardsdatascience.com/churn-prediction-model-8a3f669cc760
+- https://towardsdatascience.com/comprehensive-churn-prediction-and-analysis-d552e0e56162
+- https://airship.medium.com/how-we-built-our-machine-learning-model-for-churn-prediction-e09978df4409
+
+--papers to read
+https://towardsdatascience.com/6-papers-every-modern-data-scientist-must-read-1d0e708becd
+
+4. Improvement
+- check if user use browser to log in fb, gg account
+- check if user turn on PN or not
+- collect data for more features and action logs 
+
+
