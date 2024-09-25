@@ -1,4 +1,4 @@
-# User Churn Prediction Project
+# E-Commerce User Churn Prediction Project
 ## Overview
 This project aims to predict user churn using machine learning techniques. User churn refers to the phenomenon where users of a product or service stop using it over a given period of time. By accurately identifying potential churners, businesses can take proactive measures to retain them and mitigate revenue loss.
 
@@ -19,7 +19,7 @@ Mobile churn prediction model 4w in advance.ipynb: Script for Model with criteri
 
 churn prediction task tracking.txt: draft idea for the prediction model 
 
-user churn prediction model - full paper.pdf: Full analysis and work
+E-commerce User Churn prediction model - Full Paper.pdf: Full analysis and work
 
 requirements.txt: File listing the required Python dependencies.
 
